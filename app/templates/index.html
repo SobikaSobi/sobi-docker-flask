@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flask x Docker Starter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main class="container">
+      <h1>👋 Hello from Flask + Docker</h1>
+      <p>You're running a containerized Python web app. Edit <code>app/app.py</code> to change routes.</p>
+
+      <section class="cards">
+        <a class="card" href="/api/health" target="_blank" rel="noreferrer">/api/health</a>
+        <a class="card" href="/api/ping" target="_blank" rel="noreferrer">/api/ping</a>
+        <a class="card" href="https://docs.docker.com/get-started/overview/" target="_blank" rel="noreferrer">Docker Docs</a>
+      </section>
+
+      <p class="tip">Pro tip: try <code>docker compose up --build</code> for a smoother dev loop.</p>
+    </main>
+  </body>
+</html>

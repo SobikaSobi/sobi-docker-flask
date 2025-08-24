@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+    # Uncomment this for live-editing in dev (host ↔ container)
+    # volumes:
+    #   - ./app:/app/app
